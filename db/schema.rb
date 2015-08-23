@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150823034910) do
+ActiveRecord::Schema.define(version: 20150823160013) do
 
   create_table "authhashes", force: :cascade do |t|
     t.string   "provider"
@@ -41,6 +41,8 @@ ActiveRecord::Schema.define(version: 20150823034910) do
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.string   "name"
+    t.string   "provider"
+    t.string   "uid"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
