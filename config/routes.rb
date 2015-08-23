@@ -5,4 +5,8 @@ Rails.application.routes.draw do
 
   get("/find", :controller => "find", :action => "index")
 
+  get '/auth/:provider', to: 'sessions#create'
+
+  get '/auth/:provider/callback', to: 'sessions#create'
+
 end
