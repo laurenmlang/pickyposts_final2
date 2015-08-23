@@ -214,6 +214,7 @@ DEPENDENCIES
   hirb
   jbuilder (~> 2.0)
   jquery-rails
+  omniauth
   omniauth-facebook
   quiet_assets
   rails (= 4.2.3)
