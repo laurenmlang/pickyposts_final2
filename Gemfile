@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'starter_generators', :git => "http://github.com/rbetina/starter_generators.git"
 gem 'devise'
-gem 'omniauth-facebook'
+gem 'omniauth-facebook', '1.4.0'
 gem 'omniauth'
 
 group :production do
